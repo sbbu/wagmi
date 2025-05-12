@@ -26,7 +26,7 @@ import { parseEther } from 'viem'
 import { sendCalls } from '@wagmi/core'
 import { config } from './config'
 
-const id = await sendCalls(config, {
+const { id } = await sendCalls(config, {
   calls: [
     {
       to: '0x70997970c51812dc3a010c7d01b50e0d17dc79c8',
@@ -62,7 +62,7 @@ import { parseEther } from 'viem'
 import { sendCalls } from '@wagmi/core'
 import { config } from './config'
 
-const id = await sendCalls(config, {
+const { id } = await sendCalls(config, {
   account: '0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266', // [!code focus]
   calls: [
     {
@@ -91,7 +91,7 @@ import { parseEther } from 'viem'
 import { sendCalls } from '@wagmi/core'
 import { config } from './config'
 
-const id = await sendCalls(config, {
+const { id } = await sendCalls(config, {
   calls: [ // [!code focus]
     { // [!code focus]
       to: '0x70997970c51812dc3a010c7d01b50e0d17dc79c8', // [!code focus]
@@ -119,7 +119,7 @@ import { parseEther } from 'viem'
 import { sendCalls } from '@wagmi/core'
 import { config } from './config'
 
-const id = await sendCalls(config, {
+const { id } = await sendCalls(config, {
   calls: [
     {
       to: '0x70997970c51812dc3a010c7d01b50e0d17dc79c8',
@@ -152,7 +152,7 @@ import { parseEther } from 'viem'
 import { sendCalls } from '@wagmi/core'
 import { config } from './config'
 
-const id = await sendCalls(config, {
+const { id } = await sendCalls(config, {
   calls: [
     {
       to: '0x70997970c51812dc3a010c7d01b50e0d17dc79c8',
@@ -183,7 +183,7 @@ import { sendCalls } from '@wagmi/core'
 import { config } from './config'
 
 const connections = getConnections(config)
-const id = await sendCalls(config, {
+const { id } = await sendCalls(config, {
   calls: [
     {
       to: '0x70997970c51812dc3a010c7d01b50e0d17dc79c8',
